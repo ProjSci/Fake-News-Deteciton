@@ -149,7 +149,8 @@ st.sidebar.markdown("""
 <b>Kelompok 9 - LC01</b><br><br>
 
 1. Samuel Christoff<br>
-2. Jovin Prasetia Willim
+2. Jovin Prasetia Willim<br>
+3. Kevin Richie Jan
 </div>
 """, unsafe_allow_html=True)
 
@@ -274,7 +275,8 @@ if menu == "🏠 Home":
     <h3>👥Project Team</h3>
     Group 9 - LC01<br>
     1. Samuel Christoff      - 2802403706<br>
-    2. Jovin Prasetia Willim - 2802398100
+    2. Jovin Prasetia Willim - 2802398100<br>
+    3. Kevin Richie Jan      - 2802415763
     
     </div>
     <br>
