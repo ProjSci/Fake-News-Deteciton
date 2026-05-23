@@ -171,19 +171,13 @@ Binus University
 # =========================================================
 
 def clean_text(text):
-
-    if pd.isna(text):
-        return ""
-    text = str(text)
     text = text.lower()
-
-    # Remove URLs
-    text = re.sub(r"http\\S+", "", text)
-    # Keep letters and spaces
-    text = re.sub(r"[^a-zA-Z\\s]", "", text)
-    # Remove extra spaces
-    text = re.sub(r"\\s+", " ", text).strip()
-
+    text = re.sub(r'\[.*?\]', '', text)
+    text = re.sub(r'https?://\S+|www\.\S+', '', text)
+    text = re.sub(r'<.*?>+', '', text)
+    text = re.sub(r'[%s]' % re.escape(string.punctuation), '', text)
+    text = re.sub(r'\n', '', text)
+    text = re.sub(r'\w*\d\w*', '', text)
     return text
 
 # =========================================================
